@@ -9,7 +9,7 @@ except Exception:
 from django.conf import settings
 import uuid
 
-
+# One exam contains multiple questions and each question should have more than one correct choice (multi-selection).
 # Instructor model
 class Instructor(models.Model):
     user = models.ForeignKey(
